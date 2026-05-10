@@ -1,6 +1,6 @@
 "use client";
 
-import { Coffee, Github, Mail, ExternalLink } from "lucide-react";
+import { Coffee, GitHub, Mail, ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 const navLinks = [
