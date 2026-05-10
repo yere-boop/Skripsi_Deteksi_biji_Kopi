@@ -31,7 +31,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-lg font-bold text-white">
-                  Coffee Inspect<span className="text-amber-500">.AI</span>
+                  Coffee Inspect<span className="text-amber-500">.AI Online</span>
                 </p>
               </div>
             </div>
