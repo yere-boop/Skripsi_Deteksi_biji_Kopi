@@ -113,7 +113,9 @@ export default function InspeksiPage() {
       setCurrentStep(2);
       const aiFormData = new FormData();
       aiFormData.append("file", imageFile);
-      const aiResponse = await fetch("http://127.0.0.1:8000/predict", { method: "POST", body: aiFormData });
+      
+      const API_URL = process.env.NEXT_PUBLIC_AI_API_URL || "http://localhost:8000";
+      const aiResponse = await fetch(`${API_URL}/predict`, { method: "POST", body: aiFormData });
       
       if (aiResponse.status === 422) {
         const errorData = await aiResponse.json();
