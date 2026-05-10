@@ -1,6 +1,6 @@
 "use client";
 
-import { Coffee, GitHub, Mail, ExternalLink } from "lucide-react";
+import { Coffee, Mail } from "lucide-react";
 import Link from "next/link";
 
 const navLinks = [
@@ -31,7 +31,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-lg font-bold text-white">
-                  Coffee Inspect<span className="text-amber-500">.AI Online</span>
+                  Coffee Inspect<span className="text-amber-500">.AI ONLINE</span>
                 </p>
               </div>
             </div>
@@ -75,7 +75,7 @@ export default function Footer() {
                   className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-white/40 transition-colors hover:bg-white/5 hover:text-white/70"
                 >
                   {tech.label}
-                  <ExternalLink className="h-3 w-3 opacity-50" />
+                  <span className="text-[10px] opacity-30">↗</span>
                 </a>
               ))}
             </div>
